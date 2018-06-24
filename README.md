@@ -7,7 +7,7 @@ You can choose between:
 ` docker build -t vtiger . ` (in the same path of your Dockerfile)
 
 ##### 2) Pull it from docker hub:
-` docker pull pimuzzo/vtiger `
+` docker pull ldavid/vtiger `
 
 #### RUN CONTAINER:
 
@@ -21,7 +21,7 @@ You need a DB container, you can choose between:
 
 Then run Vtiger container:
 
-` docker run --name vtiger -d -e DB_HOSTNAME=127.0.0.1 -e DB_USERNAME=vtiger_user -e DB_PASSWORD=pwd -e DB_NAME=vtiger -p 80:80 --net=host pimuzzo/vtiger `
+` docker run --name vtiger -d -e DB_HOSTNAME=127.0.0.1 -e DB_USERNAME=vtiger_user -e DB_PASSWORD=pwd -e DB_NAME=vtiger -p 80:80 --net=host ldavid/vtiger `
 
 #### CONFIGURATION:
 
